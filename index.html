@@ -723,7 +723,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7.5"/><path d="M9 10.5h.01M15 10.5h.01M8.5 14.5c1 1.3 2.2 2 3.5 2s2.5-.7 3.5-2"/></svg>
     </div>
     <h3>¡Turno solicitado! 🌤️</h3>
-    <p>Quedó reservado como <strong>pendiente</strong> en la agenda.<br>El consultorio te va a confirmar por el contacto que dejaste.</p>
+    <p>Quedó reservado como en la agenda.<br>El consultorio te va a confirmar por el contacto que dejaste.</p>
     <div class="ticket" id="ticket"></div>
   </div>
 
@@ -741,12 +741,12 @@
      ========================================================= */
   var CONFIG = {
     // Webhook que recibe la reserva y notifica al consultorio (obligatorio)
-    BOOKING_WEBHOOK_URL: "https://n8n.rv-labs.duckdns.org/webhook-test/9a90b337-7d9f-4560-b414-b0fbdd86a9dd",
+    BOOKING_WEBHOOK_URL: "https://n8n.rv-labs.duckdns.org/webhook/9a90b337-7d9f-4560-b414-b0fbdd86a9dd",
 
     // Webhook opcional que devuelve los horarios ocupados de un día
     // Si se deja vacío, la web muestra todos los horarios del horario de
     // atención como "disponibles" y el consultorio resuelve superposiciones.
-    AVAILABILITY_WEBHOOK_URL: "https://n8n.rv-labs.duckdns.org/webhook-test/75cf4760-855c-41a1-8035-47e9b7f4e5c7",
+    AVAILABILITY_WEBHOOK_URL: "https://n8n.rv-labs.duckdns.org/webhook/75cf4760-855c-41a1-8035-47e9b7f4e5c7",
 
     // Link de contacto directo (WhatsApp, Instagram, etc.)
     CONTACT_URL: "https://wa.me/5493510000000"
