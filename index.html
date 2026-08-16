@@ -52,7 +52,7 @@
     background-repeat: repeat;
     background-size: 340px auto;
     background-position: top left;
-    opacity:2.0;
+    opacity:80%;
     pointer-events:none;
   }
   /* lávido pastel encima del patrón para que el contenido siga siendo legible */
@@ -62,7 +62,7 @@
     inset:0;
     z-index:0;
     background:
-      linear-gradient(180deg, rgba(242,249,250,0.72), rgba(242,249,250,0.86) 40%, var(--bg) 100%);
+      linear-gradient(180deg, rgba(242,249,250,0.72), rgba(242,249,250,0.86) 80%, var(--bg) 100%);
     pointer-events:none;
   }
 
@@ -741,12 +741,12 @@
      ========================================================= */
   var CONFIG = {
     // Webhook que recibe la reserva y notifica al consultorio (obligatorio)
-    BOOKING_WEBHOOK_URL: "https://n8n.rv-labs.duckdns.org/webhook/9a90b337-7d9f-4560-b414-b0fbdd86a9dd",
+    BOOKING_WEBHOOK_URL: "https://n8n.rv-labs.duckdns.org/webhook-test/9a90b337-7d9f-4560-b414-b0fbdd86a9dd",
 
     // Webhook opcional que devuelve los horarios ocupados de un día
     // Si se deja vacío, la web muestra todos los horarios del horario de
     // atención como "disponibles" y el consultorio resuelve superposiciones.
-    AVAILABILITY_WEBHOOK_URL: "https://n8n.rv-labs.duckdns.org/webhook/75cf4760-855c-41a1-8035-47e9b7f4e5c7",
+    AVAILABILITY_WEBHOOK_URL: "https://n8n.rv-labs.duckdns.org/webhook-test/75cf4760-855c-41a1-8035-47e9b7f4e5c7",
 
     // Link de contacto directo (WhatsApp, Instagram, etc.)
     CONTACT_URL: "https://wa.me/5493510000000"
